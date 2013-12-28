@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata minClientVersion="2.7.2">
+		<id>PCLTest</id>
+		<version>1.0.0</version>
+		<title>PCLTest - PCL with platform dependent functionality</title>
+		<authors>Gordon Watts</authors>
+		<owners>Gordon Watts</owners>
+		<projectUrl>https://github.com/gordonwatts/PCLForFrameworkDependent</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>A consistent API to determine what flavor of platform you are running on across the Desktop, Windows Phone, and Windows Store apps.</description>
+	</metadata>
+	<files>
+		<file src="PCLTestLibrary\bin\Release\PCLTestLibrary.dll" target="lib\portable-net45+wp8+win8\PCLTestLibrary.dll" />
+		<file src="PCLTestInterfaceLibrary\bin\Release\PCLTestInterfaceLibrary.dll" target="lib\portable-net45+wp8+win8\PCLTestInterfaceLibrary.dll" />
+
+		<file src="PCLTestDesktopLibrary\bin\Release\PCLTestLibrary.dll" target="lib\net45\PCLTestLibrary.dll" />
+		<file src="PCLTestInterfaceLibrary\bin\Release\PCLTestInterfaceLibrary.dll" target="lib\net45\PCLTestInterfaceLibrary.dll" />
+
+		<file src="PCLTestWindowsLibrary\bin\Release\PCLTestLibrary.dll" target="lib\win8\PCLTestLibrary.dll" />
+		<file src="PCLTestInterfaceLibrary\bin\Release\PCLTestInterfaceLibrary.dll" target="lib\win8\PCLTestInterfaceLibrary.dll" />
+
+		<file src="PCLTestPhoneLibrary\bin\Release\PCLTestLibrary.dll" target="lib\wp8\PCLTestLibrary.dll" />
+		<file src="PCLTestInterfaceLibrary\bin\Release\PCLTestInterfaceLibrary.dll" target="lib\wp8\PCLTestInterfaceLibrary.dll" />
+	</files>
+</package>
