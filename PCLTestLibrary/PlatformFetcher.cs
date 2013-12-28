@@ -8,8 +8,6 @@ namespace PCLTestLibrary
     /// </summary>
     public class PlatformFetcher
     {
-        static Lazy<IBaseFunctionality> _platform = new Lazy<IBaseFunctionality>(() => CreatePlatformObject(), System.Threading.LazyThreadSafetyMode.PublicationOnly);
-
         /// <summary>
         /// Return the platform that we are currently using.
         /// </summary>
@@ -17,7 +15,7 @@ namespace PCLTestLibrary
         {
             get
             {
-                var r = _platform.Value;
+                var r = CreatePlatformObject();
                 if (r == null)
                     throw new NotImplementedException("The platform version of the PCLTest library was not linked in!");
 
