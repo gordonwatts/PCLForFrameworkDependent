@@ -1,6 +1,6 @@
 ﻿using PCLTestInterfaceLibrary;
 
-namespace PCLTestLibrary
+namespace PCLTestWindowsLibrary
 {
     class WinRTBaseFunctionality : IBaseFunctionality
     {

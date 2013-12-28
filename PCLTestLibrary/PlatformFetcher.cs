@@ -32,7 +32,7 @@ namespace PCLTestLibrary
 #if SILVERLIGHT
             return new PCLTestPhoneLibrary.PhoneBaseFunctionality();
 #elif NETFX_CORE
-            return new WinRTBaseFunctionality();
+            return new PCLTestWindowsLibrary.WinRTBaseFunctionality();
 #elif FILE_SYSTEM
             return new PCLTestDesktopLibrary.DesktopBaseFunctionality();
 #else
